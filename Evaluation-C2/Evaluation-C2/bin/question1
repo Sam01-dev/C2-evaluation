@@ -1,0 +1,61 @@
+IS-A relationship is basically known as the parent and child relationship.
+When a child class inherits the properties of a parent class, it is know as a 
+IS-A relationship. 
+
+Example of IS-A relationship is as follows:
+
+class Vehicle{
+	int wheeels=4;
+}
+
+class Car extends Vehicle{
+ //Here car is now a child of the Vehicle class and has inherited the 
+ wheels variable.
+}
+
+Has-A relationship is basically when the perent object is referencing to the
+child object. Here we can run the methods and variables of the parent object
+and the overriden methods of the child object.
+
+Example of Has-A relationship is as follows:
+
+class Vehicle{
+
+void run{
+
+	sysout("I am a vehicle");
+	}
+}
+
+class Bus{
+
+void run{
+
+sysout("I am a bus");
+}
+}
+
+Vehicle vehicle = new Bus();
+vehicle.run();
+//Output = " I am a bus"
+
+-----------------------------------------------------------------
+
+Access modifiers are those which help us in accessing the classes.
+There are different types of access modifiers such as public, private, default,
+protected.
+
+private - private classes can be accessed only within the class and not 
+			anywhere else.
+			
+public - public classes can be accessed by other classes as well.
+
+default - default classes can be accessed by other classes as well. We do not 
+write this term. Java compiler automatically assigns this to a class if we 
+do not write a access modifier.
+
+protected- protected class is the one which is used to build authorization 
+or security based applications. the contents of the class cannot be reassigned
+nor can the class name can be changed afterwards.
+
+
